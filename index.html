@@ -1,0 +1,145 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>Home</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<script type="text/javascript">
+	var image1=new Image()
+	image1.src="images/slideShow/images/1.jpg";
+	var image2=new Image();
+	image2.src="images/slideShow/images/2.jpg";
+	var image3=new Image();
+	image3.src="images/slideShow/images/3.jpg";
+	var image4=new Image();
+	image4.src="images/slideShow/images/4.jpg";
+	var image5=new Image();
+	image5.src="images/slideShow/images/5.jpg";
+	var image6=new Image();
+	image6.src="images/slideShow/images/6.jpg";
+	var image7=new Image();
+	image7.src="images/slideShow/images/7.jpg";
+	var image8=new Image();
+	image8.src="images/slideShow/images/8.jpg";
+</script>
+</head>
+<body>
+ <header>
+ 	<div class="regist">
+ 		<a href="#">Client Login</a>
+ 		<a href="#">Register</a>
+ 	</div>
+ 	<div class="logo">
+ 		<div class="image">
+ 			<img src="images/logo.png" alt="logo"/>
+ 		</div>
+ 		<div class="text">
+ 			<h3>Northern Colorado Real Estate, News & Events</h3>
+ 			<p>Subscribe to ower newletter for everything NoCo.</p>
+ 			<form>
+ 				<input type="text" placeholder="Your Name...."/>
+ 				<input type="text" placeholder="Your Email...."/>
+ 				<input type="submit" value="GO!"/>
+ 			</form>
+ 		</div>
+ 	</div>
+ 	<div class="nav">
+ 		<ul>
+ 			<li><a href="#">Home</a></li>
+ 			<li><a href="backage.html">Packages</a></li>
+ 			<li><a href="booking.html">Booking</a></li>
+ 			<li><a href="about_us.html">About Us</a></li>
+ 		</ul>
+ 	</div>
+ </header>
+ <div class="slider">
+ 	<img src="images/slideShow/images/1.jpg" alt="img1" name="slide"/>
+ 	
+ 	<script type="text/javascript">
+ 		var step=1;
+ 		
+		function slideit()
+		{
+			document.images.slide.src=eval("image"+step+".src")
+			if(step<8)
+			{
+				step++;
+			}
+			else
+			{
+			   step=1;	
+			}
+			setTimeout("slideit()",2500);
+		}
+		slideit();
+		
+ 	</script>
+ </div>
+ <div class="packages">
+ 	<h2>Packages</h2>
+ 	<ul>
+ 		<li><img src="images/FirstPackage.jpg" alt="pkg1"/></li>
+ 		<li><p>Package 1 Description text</p></li>
+ 		<li><img src="images/SecondPackage.jpg" alt="pkg2"/></li>
+ 		<li><p>Package 2 Description text</p></li>
+ 		<li><img src="images/ThirdPackage.jpg" alt="pkg3"/></li>
+ 		<li><p>Package 3 Description text</p></li>
+ 		<li><img src="images/FourthPackage.jpg" alt="pkg4"/></li>
+ 		<li><p>Package 4 Description text</p></li>
+ 		<li><button>More....</button></li>
+ 	</ul>
+ </div>
+ <div class="booknow">
+ 	<button>Book Now</button>
+ </div>
+ <footer>
+ 	<ul>
+ 		<li>
+ 			<div class="div1">
+ 		      <img src="images/logo.png" alt="logo"/>
+           </div>
+ 		</li>
+ 		
+ 		
+ 		<li>
+ 			<div class="div2">
+		 		<h2>About Company</h2>
+		 		<ul>
+		 			<li>xxxxxxx</li>
+		 			<li>xxxxxxx</li>
+		 			<li>xxxxxxx</li>
+		 			<li>xxxxxxx</li>
+		 		</ul>
+ 	       </div>
+ 		</li>
+ 		
+ 		
+ 		<li>
+ 			<div class="div3">
+		 		<h2>Tages</h2>
+		 		<ul>
+		 			<li>xxxxxxx</li>
+		 			<li>xxxxxxx</li>
+		 			<li>xxxxxxx</li>
+		 			<li>xxxxxxx</li>
+		 		</ul>
+ 	       </div>	
+ 		</li>
+ 		
+ 		<li>
+ 			<div class="div4">
+		 		<p>Connect With Us</p>
+		 		<ul>
+		 			<li><a href="#"><img src="images/Facebook.png"/></a></li>
+		 			<li><a href="#"><img src="images/twitter.png"/></a></li>
+		 			<li><a href="#"><img src="images/Linkedin.png"/></a></li>
+		 			<li><a href="#"><img src="images/rss.png"/></a></li>
+		 			<li><a href="#"><img src="images/mail.png"/></a></li>
+		 		</ul>
+ 	       </div>
+ 		</li>
+ 		
+ 	</ul>
+ </footer>
+</body>
+</html>
